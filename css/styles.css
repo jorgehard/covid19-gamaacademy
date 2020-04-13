@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Rubik:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.fa-bars2:before {
+  background-image: url(../assets/icons/icon-toggle.svg);
+  background-size: 30px 25px;
+  background-position-x: center;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  content: "";
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0099D9;
+  width: 100%;
+}
+header .logo-mobile {
+  /* display: none; */
+}
+
+/* inicio menu */
+header nav {
+  font-family: "Karla", sans-serif;
+  width:100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header nav ul {
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+header nav ul .logo-desktop{
+  flex-grow: 1;
+  padding:0px 20px;
+}
+header nav ul .logo-desktop img{
+  height:80%;
+  margin-top:8px;
+}
+header nav ul li{
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 40px;
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+}
+header nav ul li a:hover:not(#logo) {
+  background: #1678a1;
+  width: 100%;
+}
+.menu-toggle {
+  float: right;
+  line-height: 50px;
+  font-size: 30px;
+  display: none;
+  color: #fff;
+}
+
+/* fim menu */
+
+div.container-sup {
+  background: rgb(184, 195, 255);
+  background-image: url("../assets/bg-container-sup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-blend-mode: luminosity;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+div.container-sup div.div-content {
+  margin: 15vh 0vh 15vh 15vh;
+}
+div.container-sup div.div-content h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 102px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+div.container-sup p {
+  font-family: "Karla", sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+div.container-sup p:last-child {
+  margin-bottom: 40px;
+}
+div.container-sup a {
+  background: #edd154;
+  padding: 20px;
+  text-decoration: none;
+  width: 310px;
+  color: #333;
+  border: none;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  transition: background 0.2s;
+}
+
+div.container-sup a:hover {
+  background: rgb(224, 191, 41);
+  cursor: pointer;
+}
+/* fim banner principal */
+
+/* inicio container */
+
+div.container-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0px;
+  flex-grow: 1;
+}
+
+div.container-sobre .img-event {
+  margin-right: 15px;
+  width: 420px;
+  height: 360px;
+}
+
+div.container-sobre .info-event {
+  width: 420px;
+  margin-left: 15px;
+  margin-top: -40px;
+}
+
+div.container-sobre div.info-event h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 102px;
+  color: #333;
+  text-align: left;
+}
+
+div.container-sobre div.info-event p {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  color: #333333;
+}
+
+/* ------------- footer -------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 270px;
+  background: #49618c;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+footer ul li:first-of-type {
+  margin-right: 20px;
+}
+/* ------------------------------------------------ */
+/* ----------------- Media Screen ----------------- */
+/* ------------------------------------------------ */
+@media (max-width: 491px)  {
+  div.container-sup div.div-content h1 {
+    font-size: 38px;
+    line-height: 62px;
+  }
+  div.container-sup p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  div.container-sup div.div-content {
+    margin: 80px 0px;
+  }
+}
+  
+@media (min-width: 491px) and (max-width: 767.98px) {
+  div.container-sup div.div-content h1 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+  div.container-sup p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  div.container-sup div.div-content {
+    margin: 80px 0px;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+ 
+  div.container-sup div.div-content h1 {
+    font-size: 68px;
+    line-height: 72px;
+  }
+
+  div.container-sup p {
+    font-size: 30px;
+    line-height: 24px;
+  }
+}
+
+/* MENU TOOGLE */
+
+@media (max-width: 891px) {
+  header {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    background: #0099d9;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+  header nav ul,
+  .logo-desktop {
+    display: none;
+  }
+  .myMenuDiv {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .myMenuDiv li a {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .myMenuDiv li a:hover {
+    background: #1678a1;
+  }
+
+  /* .logo-mobile {
+    display: block;
+    width: 180.89px;
+    height: 44.98;
+  } */
+}
