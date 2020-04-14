@@ -211,8 +211,7 @@ div.container-sup a:hover {
 }
 .container-page .fonte{
   color:rgba(51, 51, 51, 0.808);
-  width:100%;
-  text-align:center;
+  width:80%;
   font-weight:bold;
   font-size:13px;
   margin-top:20px;
@@ -224,11 +223,19 @@ div.container-sup a:hover {
 }
 .audio-div{
   justify-content: flex-start;
-  padding:5vh 15vh;
+  padding-left:25vh;
+}
+.container-page h4{
+  width:70%;
+  opacity:0.6;
+  padding-bottom: 40px;
+  z-index:-1;
 }
 .container-page h1{
   font-size:28px;
   width:80%;
+  padding:20px 0px;
+  font-family: 'Karla', sans-serif;
 }
 
 /* ------------- footer -------------- */
