@@ -80,7 +80,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   background: #0099D9;
