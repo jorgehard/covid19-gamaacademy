@@ -19,6 +19,10 @@
     * ADD: Primeiro modelo de caixa de noticias
     * Update: Ajustes de posição de caixa de texto e imagem de fundo
     * ADD: Primeira pagina de noticia em branco 
+* 0.1.5
+    * ADD: Imagens, videos e audios referente a noticias
+    * UPDATE: Corrigindo layout das noticias
+    * ADD: Codigo referente a pagina noticia / video / audio
 
 ## Envolvidos no desenvolvimento
 
