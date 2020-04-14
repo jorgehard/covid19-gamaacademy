@@ -1,5 +1,5 @@
 # Covid19 - Boletim
-> Projeto de boletim para o covid19
+> Projeto de boletim de noticias sobre o covid19
 
 ## Histórico de lançamentos
 
@@ -14,8 +14,11 @@
 * 0.0.8
     * Update: Menu responsivo, correção do logo e ajuste de espaçamento no mobile
     * Info: Falta teste de usabilidade
-    * Update: Banner, troca de texto e ajuste do botão
-    * Update: Padronizando colunas da noticia com flex
+    * Update: Banner, troca de texto e ajuste do botão.
+    * Update: Padronizando colunas da noticia com flex.
+    * ADD: Primeiro modelo de caixa de noticias
+    * Update: Ajustes de posição de caixa de texto e imagem de fundo
+    * ADD: Primeira pagina de noticia em branco 
 
 ## Envolvidos no desenvolvimento
 
