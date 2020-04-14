@@ -42,13 +42,29 @@ html, body {
 }
 
 .news-box > .title-box{
+  height:100%;
+  width:100%;
+  display:block;
+  text-decoration: none;
+}
+.news-box > .title-box,.text-box:hover{
+  text-decoration: underline;
+}
+.title-box > .text-box{
   position:absolute;
-  bottom:0px;
-  background:red;
+  display:block;
+  width:100%;
   padding:20px;
+  min-height:110px !important;
+  bottom:0px;
+  background-color: rgba(0, 0, 0, 0.592);
 }
 
-
+.text-box{
+  color:#FFF;
+  font-size:18px;
+  font-family: "Karla", sans-serif;
+}
 
 /* ---- */
 .fa-bars2:before {
@@ -202,16 +218,9 @@ footer {
   flex-wrap: wrap;
 }
 
-footer ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-footer ul li:first-of-type {
-  margin-right: 20px;
+footer p{
+  margin-top:30px;
+  color:#fff;
 }
 /* ------------------------------------------------ */
 /* ----------------- Media Screen ----------------- */
