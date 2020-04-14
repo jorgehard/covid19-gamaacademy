@@ -12,7 +12,10 @@
     * UPDATE: Responsividade do Menu Topo
     * UPDATE: Estilização da estrutura feita
 * 0.0.8
-    * Info:
+    * Update: Menu responsivo, correção do logo e ajuste de espaçamento no mobile
+    * Info: Falta teste de usabilidade
+    * Update: Banner, troca de texto e ajuste do botão
+    * Update: Padronizando colunas da noticia com flex
 
 ## Envolvidos no desenvolvimento
 
