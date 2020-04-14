@@ -10,6 +10,19 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+/* Divs padroes */
+.container-flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container-flex .col{
+  flex: 0 0 auto;
+  width: 33.333333%;
+  padding:10px 20px;
+}
+/* ---- */
 .fa-bars2:before {
   background-image: url(../assets/icons/icon-toggle.svg);
   background-size: 30px 25px;
@@ -28,9 +41,6 @@ header {
   left: 0;
   background: #0099D9;
   width: 100%;
-}
-header .logo-mobile {
-  /* display: none; */
 }
 
 /* inicio menu */
@@ -72,14 +82,27 @@ header nav ul li a:hover:not(#logo) {
   background: #1678a1;
   width: 100%;
 }
+.menu-toggle ul li{
+ list-style: none;
+}
+.menu-toggle ul{
+  display: flex;
+  align-items: center;
+}
 .menu-toggle {
-  float: right;
+  width:100%;
+  display: flex;
   line-height: 50px;
   font-size: 30px;
   display: none;
-  color: #fff;
 }
-
+header .logo-mobile{
+  flex-grow: 1;
+  padding:0px 20px;
+}
+header .logo-mobile img{
+  width:20vh;
+}
 /* fim menu */
 
 div.container-sup {
@@ -104,7 +127,7 @@ div.container-sup div.div-content h1 {
   font-size: 68px;
   line-height: 102px;
   margin-bottom: 20px;
-  color: #333;
+  color: #F3F3F3;
   text-align: left;
 }
 
@@ -113,6 +136,7 @@ div.container-sup p {
   font-weight: normal;
   font-size: 26px;
   line-height: 39px;
+  color:#fff;
 }
 
 div.container-sup p:last-child {
@@ -138,46 +162,6 @@ div.container-sup a:hover {
   cursor: pointer;
 }
 /* fim banner principal */
-
-/* inicio container */
-
-div.container-sobre {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px 0px;
-  flex-grow: 1;
-}
-
-div.container-sobre .img-event {
-  margin-right: 15px;
-  width: 420px;
-  height: 360px;
-}
-
-div.container-sobre .info-event {
-  width: 420px;
-  margin-left: 15px;
-  margin-top: -40px;
-}
-
-div.container-sobre div.info-event h1 {
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 102px;
-  color: #333;
-  text-align: left;
-}
-
-div.container-sobre div.info-event p {
-  font-family: "Karla", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 20px;
-  color: #333333;
-}
 
 /* ------------- footer -------------- */
 footer {
@@ -272,23 +256,6 @@ footer ul li:first-of-type {
   .logo-desktop {
     display: none;
   }
-  .myMenuDiv {
-    display: block;
-    text-align: center;
-    width: 100%;
+  .container-flex .col{
+    width:100%;
   }
-
-  .myMenuDiv li a {
-    width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-  .myMenuDiv li a:hover {
-    background: #1678a1;
-  }
-
-  /* .logo-mobile {
-    display: block;
-    width: 180.89px;
-    height: 44.98;
-  } */
-}
