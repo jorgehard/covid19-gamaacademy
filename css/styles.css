@@ -206,6 +206,30 @@ div.container-sup a:hover {
   cursor: pointer;
 }
 /* fim banner principal */
+.container-page{
+  margin: 18vh 0vh;
+}
+.container-page .fonte{
+  color:rgba(51, 51, 51, 0.808);
+  width:100%;
+  text-align:center;
+  font-weight:bold;
+  font-size:13px;
+  margin-top:20px;
+}
+
+.container-page .fonte > a{
+  color:rgba(51, 51, 51, 0.808);
+  text-decoration: none;
+}
+.audio-div{
+  justify-content: flex-start;
+  padding:5vh 15vh;
+}
+.container-page h1{
+  font-size:28px;
+  width:80%;
+}
 
 /* ------------- footer -------------- */
 footer {
