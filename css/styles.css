@@ -11,11 +11,55 @@ html, body {
   scroll-behavior: smooth;
 }
 /* Divs padroes */
+/* 
+Fazendo algumas classes para facilitar o meu desenvolvimento
+*/
+.text-center{
+  text-align:center;
+}
+.pad-10{
+  padding:10px;
+}
+.img-50{
+  width:50%;
+}
+.img-100{
+  width:100%;
+}
+.flex-1{
+  flex:1;
+}
+.flex-2{
+  flex:2;
+}
+.flex-3{
+  flex:3;
+}
+.flex-4{
+  flex:4;
+}
+.flex-5{
+  flex:5;
+}
+.flex-6{
+  flex:6;
+}
+/* fim do padroes flex */
 .container-flex{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+.js-around{
+  justify-content: space-around;
+}
+.js-center{
   justify-content: center;
+}
+.container-flex .col-6{
+  flex: 0 0 auto;
+  width: 50%;
+  padding:10px 20px;
 }
 .container-flex .col{
   flex: 0 0 auto;
@@ -80,7 +124,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   background: #0099D9;
@@ -207,8 +251,87 @@ div.container-sup a:hover {
   background: rgb(224, 191, 41);
   cursor: pointer;
 }
+/* SOBRE */
+.container-sobre .img-sobre .icon-svg{
+  width:40%;
+}
+.container-sobre .img-sobre{
+  align-self:flex-start;
+  padding-top:10vh;
+}
+.container-sobre .img-sobre p{
+  font-family: 'Karla', sans-serif;
+  color:#666;
+  text-align:center;
+  font-size:16px;
+  padding-top:20px;
+}
+.container-sobre img#perfil{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-sobre .text-sobre h1{
+  font-family: 'Karla', sans-serif;
+  font-size:29px;
+  padding:10px 0px;
+  color:#333;
+}
+.container-sobre .text-sobre p{
+  padding:10px 0px;
+  text-align:justify;
+  /* text-indent:2em;  */
+  color:#333;
+  font-size:15px;
+  line-height:1.5;
+}
+.container-sobre .language-box{
+  margin-top:10vh;
+}
+.container-sobre .box-sobre{
+  background:#faf9f9;
+  padding:10px;
+}
+.container-sobre{
+  padding: 0vh 10vh;
+}
+.img-language{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+/* SAIBA MAIS */
+.saiba-mais{
+  padding:0vh 10vh;
+}
+.saiba-mais h1{
+  font-size:28px;
+  border-bottom:1px solid #f3f3f3;
+  padding:5px;
+}
+.saiba-mais ul{
+  list-style: none;
+  margin-top:15px;
+}
+.saiba-mais ul li{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex:1;
+}
+.saiba-mais ul li span{
+  font-weight:bold;
+  width:20%;
+  padding:10px;
+}
+
+.saiba-mais ul li a{
+  text-decoration: underline;
+  color:#000;
+  width:70%;
+  word-wrap: break-word;
+  padding:10px;
+}
 /* fim banner principal */
-.container-page{
+.container-page, .container-sobre{
   margin: 18vh 0vh;
 }
 .container-page .fonte{
@@ -217,8 +340,11 @@ div.container-sup a:hover {
   font-weight:bold;
   font-size:13px;
   margin-top:20px;
+  text-align:center;
 }
-
+.audio-div > .fonte{
+  text-align:left !important;
+}
 .container-page .fonte > a{
   color:rgba(51, 51, 51, 0.808);
   text-decoration: none;
@@ -233,11 +359,15 @@ div.container-sup a:hover {
   padding-bottom: 40px;
   z-index:-1;
 }
-.container-page h1{
+.container-page h1:not(.classico) {
   font-size:28px;
   width:80%;
   padding:20px 0px;
   font-family: 'Karla', sans-serif;
+}
+.classico{
+  font-family: 'Karla', sans-serif;
+  color:#333;
 }
 /* ------------ container news ---------- */
 .container-news{
@@ -258,6 +388,20 @@ footer p{
   margin-top:30px;
   color:#fff;
 }
+/* Menu mobile */
+.myMenuDiv {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.myMenuDiv li a {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.myMenuDiv li a:hover {
+  background: #1678a1;
+}
 /* ------------------------------------------------ */
 /* ----------------- Media Screen ----------------- */
 /* ------------------------------------------------ */
@@ -273,6 +417,7 @@ footer p{
   div.container-sup div.div-content {
     margin: 80px 0px;
   }
+  
 }
   
 @media (min-width: 491px) and (max-width: 767.98px) {
@@ -287,6 +432,7 @@ footer p{
   div.container-sup div.div-content {
     margin: 80px 0px;
   }
+  
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -299,6 +445,10 @@ footer p{
   div.container-sup p {
     font-size: 30px;
     line-height: 24px;
+  }
+  
+  .saiba-mais ul li a{
+    width:80%;
   }
 }
 
@@ -331,5 +481,14 @@ footer p{
   }
   .container-flex .col{
     width:100%;
+  }
+  .saiba-mais ul li{
+    flex-direction: column !important;
+  }
+  .saiba-mais ul li span{
+    width:100%;
+  }
+  .saiba-mais ul li a{
+    width:90vh;
   }
 }
