@@ -1,5 +1,9 @@
-# Covid19 - Boletim
-> Projeto de boletim de noticias sobre o covid19
+# Boletim - Covid19
+> Projeto para um site rapido com pequenas noticias e referencias ao covid-19, feito para o hiring coders
+
+
+![Screenshot1](assets/layout-page.jpg)
+
 
 ## Histórico de lançamentos
 
@@ -26,7 +30,11 @@
 * 0.1.8
     * ADD: Pagina Sobre
     * UPDATE: Configurando estilo da pagina e posição do grid 
-
+* 0.2.0
+    * ADD: Pagina Saiba Mais & Contato
+    * Update: Estilização das duas paginas
+* 0.2.3
+    * Info: Versão final e envio para o servidor
     
 ## Envolvidos no desenvolvimento
 
