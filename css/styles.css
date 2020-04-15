@@ -20,6 +20,9 @@ Fazendo algumas classes para facilitar o meu desenvolvimento
 .pad-10{
   padding:10px;
 }
+.img-50{
+  width:50%;
+}
 .img-100{
   width:100%;
 }
@@ -277,8 +280,19 @@ div.container-sup a:hover {
   font-size:15px;
   line-height:1.5;
 }
+.container-sobre .language-box{
+  margin-top:10vh;
+}
+.container-sobre .box-sobre{
+  background:#fff3f3;
+  padding:10px;
+}
 .container-sobre{
   padding: 0vh 10vh;
+}
+.img-language{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 /* fim banner principal */
 .container-page, .container-sobre{
