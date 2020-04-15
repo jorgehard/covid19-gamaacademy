@@ -23,7 +23,11 @@
     * ADD: Imagens, videos e audios referente a noticias
     * UPDATE: Corrigindo layout das noticias
     * ADD: Codigo referente a pagina noticia / video / audio
+* 0.1.8
+    * ADD: Pagina Sobre
+    * UPDATE: Configurando estilo da pagina e posição do grid 
 
+    
 ## Envolvidos no desenvolvimento
 
 Jorge Henrique – [@LinkedIn](https://www.linkedin.com/in/jorge-henrique-baptista/) – jorgehenrique@live.com

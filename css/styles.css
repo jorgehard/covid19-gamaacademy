@@ -11,11 +11,49 @@ html, body {
   scroll-behavior: smooth;
 }
 /* Divs padroes */
+/* 
+Fazendo algumas classes para facilitar o meu desenvolvimento
+*/
+.text-center{
+  text-align:center;
+}
+.pad-10{
+  padding:10px;
+}
+.img-100{
+  width:100%;
+}
+.flex-1{
+  flex:1;
+}
+.flex-2{
+  flex:2;
+}
+.flex-3{
+  flex:3;
+}
+.flex-4{
+  flex:4;
+}
+.flex-5{
+  flex:5;
+}
+.flex-6{
+  flex:6;
+}
+/* fim do padroes flex */
 .container-flex{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+}
+.js-around{
+  justify-content: space-around;
+}
+.container-flex .col-6{
+  flex: 0 0 auto;
+  width: 50%;
+  padding:10px 20px;
 }
 .container-flex .col{
   flex: 0 0 auto;
@@ -207,8 +245,43 @@ div.container-sup a:hover {
   background: rgb(224, 191, 41);
   cursor: pointer;
 }
+/* SOBRE */
+.container-sobre .img-sobre .icon-svg{
+  width:40%;
+}
+.container-sobre .img-sobre{
+  align-self:flex-start;
+  padding-top:10vh;
+}
+.container-sobre .img-sobre p{
+  font-family: 'Karla', sans-serif;
+  color:#666;
+  text-align:center;
+  font-size:16px;
+  padding-top:20px;
+}
+.container-sobre img#perfil{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-sobre .text-sobre h1{
+  font-family: 'Karla', sans-serif;
+  font-size:29px;
+  padding:10px 0px;
+  color:#333;
+}
+.container-sobre .text-sobre p{
+  padding:10px 0px;
+  text-align:justify;
+  /* text-indent:2em;  */
+  color:#333;
+  font-size:15px;
+  line-height:1.5;
+}
+.container-sobre{
+  padding: 0vh 10vh;
+}
 /* fim banner principal */
-.container-page{
+.container-page, .container-sobre{
   margin: 18vh 0vh;
 }
 .container-page .fonte{
@@ -217,8 +290,11 @@ div.container-sup a:hover {
   font-weight:bold;
   font-size:13px;
   margin-top:20px;
+  text-align:center;
 }
-
+.audio-div > .fonte{
+  text-align:left !important;
+}
 .container-page .fonte > a{
   color:rgba(51, 51, 51, 0.808);
   text-decoration: none;
@@ -257,6 +333,20 @@ footer {
 footer p{
   margin-top:30px;
   color:#fff;
+}
+/* Menu mobile */
+.myMenuDiv {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.myMenuDiv li a {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.myMenuDiv li a:hover {
+  background: #1678a1;
 }
 /* ------------------------------------------------ */
 /* ----------------- Media Screen ----------------- */
