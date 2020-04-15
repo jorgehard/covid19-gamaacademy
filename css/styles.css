@@ -383,7 +383,9 @@ footer {
   background: #49618c;
   flex-wrap: wrap;
 }
-
+footer img{
+  width:30%;
+}
 footer p{
   margin-top:30px;
   color:#fff;
@@ -417,7 +419,34 @@ footer p{
   div.container-sup div.div-content {
     margin: 80px 0px;
   }
-  
+  div.container-sup a{
+    font-size:18px;
+  }
+  .container-news{
+    padding:0vh;
+  }
+  footer img{
+    width:50%;
+  }
+  footer p{
+    font-size:12px;
+  }
+  .container-page .container-flex > iframe{
+    height:25vh;
+  }
+  .audio-div{
+    padding-left:20px;
+  }
+  .container-sobre .img-sobre .icon-svg{
+    width:100%;
+  }
+  .col-6{
+    width:100% !important;
+    padding:0px;
+  }
+  .saiba-mais{
+    padding:2vh;
+  }
 }
   
 @media (min-width: 491px) and (max-width: 767.98px) {
@@ -433,6 +462,16 @@ footer p{
     margin: 80px 0px;
   }
   
+  .audio-div{
+    padding-left:20px;
+  }
+  .container-sobre .img-sobre .icon-svg{
+    width:50%;
+  }
+  .col-6{
+    width:100% !important;
+    padding:0px;
+  }
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
