@@ -53,6 +53,9 @@ Fazendo algumas classes para facilitar o meu desenvolvimento
 .js-around{
   justify-content: space-around;
 }
+.js-center{
+  justify-content: center;
+}
 .container-flex .col-6{
   flex: 0 0 auto;
   width: 50%;
@@ -284,7 +287,7 @@ div.container-sup a:hover {
   margin-top:10vh;
 }
 .container-sobre .box-sobre{
-  background:#fff3f3;
+  background:#faf9f9;
   padding:10px;
 }
 .container-sobre{
@@ -293,6 +296,39 @@ div.container-sup a:hover {
 .img-language{
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+}
+/* SAIBA MAIS */
+.saiba-mais{
+  padding:0vh 10vh;
+}
+.saiba-mais h1{
+  font-size:28px;
+  border-bottom:1px solid #f3f3f3;
+  padding:5px;
+}
+.saiba-mais ul{
+  list-style: none;
+  margin-top:15px;
+}
+.saiba-mais ul li{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex:1;
+}
+.saiba-mais ul li span{
+  font-weight:bold;
+  width:20%;
+  padding:10px;
+}
+
+.saiba-mais ul li a{
+  text-decoration: underline;
+  color:#000;
+  width:70%;
+  word-wrap: break-word;
+  padding:10px;
 }
 /* fim banner principal */
 .container-page, .container-sobre{
@@ -323,11 +359,15 @@ div.container-sup a:hover {
   padding-bottom: 40px;
   z-index:-1;
 }
-.container-page h1{
+.container-page h1:not(.classico) {
   font-size:28px;
   width:80%;
   padding:20px 0px;
   font-family: 'Karla', sans-serif;
+}
+.classico{
+  font-family: 'Karla', sans-serif;
+  color:#333;
 }
 /* ------------ container news ---------- */
 .container-news{
@@ -377,6 +417,7 @@ footer p{
   div.container-sup div.div-content {
     margin: 80px 0px;
   }
+  
 }
   
 @media (min-width: 491px) and (max-width: 767.98px) {
@@ -391,6 +432,7 @@ footer p{
   div.container-sup div.div-content {
     margin: 80px 0px;
   }
+  
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -403,6 +445,10 @@ footer p{
   div.container-sup p {
     font-size: 30px;
     line-height: 24px;
+  }
+  
+  .saiba-mais ul li a{
+    width:80%;
   }
 }
 
@@ -435,5 +481,14 @@ footer p{
   }
   .container-flex .col{
     width:100%;
+  }
+  .saiba-mais ul li{
+    flex-direction: column !important;
+  }
+  .saiba-mais ul li span{
+    width:100%;
+  }
+  .saiba-mais ul li a{
+    width:90vh;
   }
 }
