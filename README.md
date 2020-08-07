@@ -5,7 +5,7 @@
 ![Screenshot1](assets/layout-page.jpg)
 
 
-**## Histórico de lançamentos**
+## **Histórico de lançamentos**
 
 * 0.0.1
     * ADD: Inclusão do menu topo
